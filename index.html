@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,6 +61,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1 class="heading">Simple Interest </h1>
     <div class="container">
@@ -72,6 +74,22 @@
             <button type="button" class="btn-calculate" onclick="reset()">Reset</button>
         </div>
     </div>
+
+    <script>
+        function calculate() {
+            const amount = document.getElementById("amount");
+            const rate = document.getElementById("rate");
+            const time = document.getElementById("time");
+
+            const answer = (parseInt(amount.value) * parseInt(rate.value) * parseInt(time.value)) / 100;
+
+            const ans = document.getElementById("answer");
+
+            ans.innerText = `Answer: ${answer} `;
+        }
+
+       
+    </script>
 
 </body>
 </html>
