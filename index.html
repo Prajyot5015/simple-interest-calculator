@@ -88,7 +88,20 @@
             ans.innerText = `Answer: ${answer} `;
         }
 
-       
+        function reset() {
+            const amount = document.getElementById("amount");
+            const rate = document.getElementById("rate");
+            const year = document.getElementById("time");
+
+            const ans = document.getElementById("answer");
+
+            amount.value = "";
+            rate.value = "";
+            time.value = "";
+
+            ans.innerText = "";
+        }
+
     </script>
 
 </body>
